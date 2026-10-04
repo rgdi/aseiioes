@@ -1,0 +1,108 @@
+{
+  "title": "Tarjeta de ostomizado: cómo solicitarla y para qué sirve",
+  "slug": "tarjeta-de-ostomizado",
+  "date": "2026-08-19",
+  "category": "Salud",
+  "tags": [
+    "ostomía",
+    "tarjeta",
+    "prestaciones",
+    "producto"
+  ],
+  "author": "Equipo ASEIIO",
+  "excerpt": "Identifica ante el servicio de salud que eres persona ostomizada y abre la puerta a prestaciones que a veces tardan años en reconocerse.",
+  "cover": "teal",
+  "art": "bag",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Tener una tarjeta de ostomizado no es un trámite menor. Es la llave que abre respuestas a muchas preguntas que te van a hacer durante años."
+    },
+    {
+      "type": "art",
+      "which": "bag",
+      "caption": "La tarjeta acredita tu condición ante cualquier servicio.",
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "Qué es y para qué sirve"
+    },
+    {
+      "type": "p",
+      "text": "Es un documento que acredita que tienes una ostomía permanente o temporal. Sirve para que el personal sanitario sepa cómo tratarte, para acreditar la condición ante la empresa y para acceder a determinadas prestaciones y exenciones."
+    },
+    {
+      "type": "columns",
+      "items": [
+        {
+          "icon": "shield",
+          "title": "En el centro de salud",
+          "text": "El personal de enfermería sabe de un vistazo qué producto necesitas y cómo lo usas."
+        },
+        {
+          "icon": "card",
+          "title": "Ante terceros",
+          "text": "Acredita tu condición sin que tengas que explicarla una y otra vez cada vez que te atienden."
+        }
+      ],
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "Cómo se solicita"
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "Pide cita",
+          "text": "En tu centro de salud, con la unidad de atención primaria o con la unidad de ostomizados si la hay."
+        },
+        {
+          "title": "Aporta el informe de la intervención",
+          "text": "Normalmente el parte quirúrgico o el informe de alta donde consta la ostomía."
+        },
+        {
+          "title": "Rellena la solicitud",
+          "text": "La tramita el propio centro o la unidad de ostomizados de referencia de tu zona."
+        },
+        {
+          "title": "Recógela y llévala encima",
+          "text": "La tarjeta es física y también conviene tenerla en formato digital en el móvil."
+        }
+      ],
+      "text": ""
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "title": "Consejo práctico",
+      "text": "Fotografía la tarjeta por ambas caras y guárdala en una carpeta de tu móvil y en tu correo. Es el documento que más veces te van a pedir y el que más veces se te va a olvidar llevar."
+    },
+    {
+      "type": "h2",
+      "text": "Lo que suele abrir"
+    },
+    {
+      "type": "list",
+      "style": "plain",
+      "items": [
+        "Acceso a la financiación del material de ostomía sin discusiones.",
+        "Exenciones o reducciones en algunos conceptos de desplazamiento.",
+        "Justificación ante el empleador de adaptaciones concretas.",
+        "Reconocimiento de tu condición en protocolos sanitarios y de salud mental."
+      ],
+      "text": ""
+    },
+    {
+      "type": "note",
+      "text": "Los requisitos y el organismo competente varían según la comunidad autónoma. Si no te la dan, escríbenos y lo revisamos."
+    },
+    {
+      "type": "note",
+      "text": "Los requisitos, la documentación y el organismo competente varían según la comunidad autónoma y pueden cambiar. Antes de ir al centro de salud, escríbenos: te decimos qué se está tramitando en tu zona y con qué documentación."
+    }
+  ],
+  "metaDescription": "La tarjeta de ostomizado identifica ante el servicio de salud que eres persona ostomizada y abre la puerta a prestaciones que tardan años en reconocerse."
+}

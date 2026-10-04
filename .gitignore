@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+
+# Lo genera el build. No se sube: `npm run build` lo recrea idéntico.
+dist/
+
+# La clave del panel de edición. ES UNA CONTRASEÑA. Nunca en el repositorio.
+.admin-clave.json
+.admin-clave.json.bak
+
+# Copias de seguridad que hace el panel antes de sobrescribir
+*.bak
+
+# Ruido del entorno
+.DS_Store
+Thumbs.db
+.home/
+.plugin-cache/
+__pycache__/

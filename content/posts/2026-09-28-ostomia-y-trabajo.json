@@ -1,0 +1,132 @@
+{
+  "title": "Ostomía y trabajo: tus derechos laborales, punto por punto",
+  "slug": "ostomia-y-trabajo",
+  "date": "2026-09-28",
+  "category": "Derechos",
+  "tags": [
+    "trabajo",
+    "ostomía",
+    "laboral",
+    "adaptación del puesto"
+  ],
+  "author": "Equipo ASEIIO",
+  "excerpt": "Tener una ostomía no te obliga a dejar de trabajar. Repasamos qué te corresponde por ley, qué debe hacer tu empresa y cómo reclamar si no te dan esa adaptación.",
+  "cover": "mix",
+  "featured": true,
+  "art": "people",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Una de las preguntas que más nos llega al escritorio es si se puede seguir trabajando teniendo una ostomía. La respuesta corta es sí. Y la larga es que hay varios derechos concretos que respaldan esa respuesta."
+    },
+    {
+      "type": "p",
+      "text": "No vamos a decirte que sea fácil. Hay días especialmente duros, en los que todo pesa más de lo normal. Pero lo que depende de la ley no es tu voluntad: es tu derecho."
+    },
+    {
+      "type": "art",
+      "which": "bag",
+      "caption": "Tener bolsa no significa tener menos opciones laborales.",
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "La adaptación del puesto es obligatoria"
+    },
+    {
+      "type": "p",
+      "text": "La ley obliga a las empresas a realizar **adaptaciones razonables** para que una persona con discapacidad pueda desarrollar su trabajo con normalidad. Una ostomía bien controlada, que no necesita ayuda de terceros para la mayoría de actividades, no suele entrar en ese catálogo. Pero sí entran otras circunstancias asociadas a la enfermedad."
+    },
+    {
+      "type": "list",
+      "style": "check",
+      "items": [
+        "Tiempo adicional para el cambio y el cuidado de la bolsa, sobre todo si el aseo está lejos del puesto.",
+        "Acceso al aseo en condiciones de privacidad, sin filtros ni zonas de paso expuesto.",
+        "Evitar reuniones con desplazamientos largos o que pasan por zonas de alta visibilidad.",
+        "Flexibilidad puntual de horario durante las crisis, siempre justificada."
+      ],
+      "text": ""
+    },
+    {
+      "type": "callout",
+      "tone": "legal",
+      "title": "Nadie puede obligarte a dejar el puesto",
+      "text": "Si la empresa te pone delante dos opciones (baja médica o jubilación anticipada), eso es una salida del empleo, y las salidas de empleo no se aceptan en silencio. Escríbenos y te ayudamos a responder."
+    },
+    {
+      "type": "h2",
+      "text": "Cómo pedirlo por escrito"
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "Guarda las pruebas",
+          "text": "Correos, mensajes, notas del caso. Empieza a documentar desde el primer momento en que notas que algo no funciona."
+        },
+        {
+          "title": "Comunica lo necesario",
+          "text": "No tienes que explicar tu enfermedad a todo el mundo. Basta con comunicar a recursos humanos o a tu responsable qué necesitas y por qué."
+        },
+        {
+          "title": "Pide por escrito",
+          "text": "Un correo con el motivo, lo que necesitas y el plazo de respuesta es mucho más eficaz que una conversación de pasillo."
+        },
+        {
+          "title": "Si no hay respuesta, escala",
+          "text": "Puedes acudir a la conciliación o a Inspección de Trabajo, y a la vía judicial si la vulneración es evidente."
+        }
+      ],
+      "text": ""
+    },
+    {
+      "type": "columns",
+      "items": [
+        {
+          "icon": "scale",
+          "title": "Primero, el dato",
+          "text": "Una ostomía por sí sola no te convierte en persona con discapacidad. Lo que se valora es la limitación real que provoca en tu día a día, y eso se puede acreditar."
+        },
+        {
+          "icon": "doc",
+          "title": "Después, el escrito",
+          "text": "Un correo o un escrito de solicitud con fecha, motivo, medida concreta y plazo de respuesta es la prueba que después importa."
+        },
+        {
+          "icon": "phone",
+          "title": "Si no hay respuesta",
+          "text": "Inspección de Trabajo, conciliación o vía judicial. La asociación te acompaña en el paso, no te lo deja a ti."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Baja médica y vuelta al trabajo"
+    },
+    {
+      "type": "p",
+      "text": "Si la enfermedad está descompensada, la baja médica es una opción legítima y no un fracaso. Mientras dura, se mantiene la cotización y existen ayudas específicas para personas con discapacidad que no siempre se conocen."
+    },
+    {
+      "type": "quote",
+      "text": "Me ofrecieron dos veces las mismas opciones: baja o jubilación. La segunda vez fui a la asociación y la cosa cambió por completo.",
+      "author": "Socia de ASEIIO",
+      "role": "Sector hostelero"
+    },
+    {
+      "type": "h2",
+      "text": "Lo que no es un derecho: tu intimidad"
+    },
+    {
+      "type": "p",
+      "text": "Ser claros también es protegerte. No tienes derecho a que ningún compañero en particular sepa que tienes una ostomía. Si te ven, es porque tú se lo has dicho o porque no has podido evitarlo. En el segundo caso, eso es una vulneración de tu intimidad."
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "Nuestra recomendación",
+      "text": "Antes de tomar decisiones drásticas, habla con el equipo jurídico de ASEIIO. Muchas veces la solución no es una baja, sino una carta bien escrita. Escríbenos y lo vemos contigo."
+    }
+  ]
+}

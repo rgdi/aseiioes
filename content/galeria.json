@@ -1,0 +1,51 @@
+{
+  "eyebrow": "Galería",
+  "h1": "lo que ha pasado",
+  "title": "Galería",
+  "desc": "Fotografías de las jornadas, los grupos y los encuentros de ASEIIO, publicadas con autorización de las personas que aparecen.",
+  "lead": "Jornadas, grupos y encuentros. Si reconoces a alguien en una foto, esa foto es suya: aquí no se publica ninguna sin permiso.",
+  "note": "Estas son fotos de ejemplo para que veas cómo queda la galería: sustitúyelas por fotos reales de las jornadas, siempre con autorización de las personas que aparecen. Si alguna vez dejas de tenerla, bórrala de este archivo, reconstruye y desaparecerá de la web.",
+  "albums": [
+    {
+      "title": "Primera jornada de robinera",
+      "date": "2026-05-16",
+      "intro": "Un sábado por la mañana con más gente de la que esperábamos.",
+      "columns": 3,
+      "photos": [
+        {
+          "src": "/assets/fotos/ejemplo/encuentro-1.jpg",
+          "alt": "Grupo de socias y socios sentados escuchando la primera charla de la jornada",
+          "caption": "La primera sesión, antes de comer."
+        },
+        {
+          "src": "/assets/fotos/ejemplo/encuentro-2.jpg",
+          "alt": "Mesa con el material repartido durante la jornada de robinera",
+          "caption": "El material que se reparte al inicio."
+        },
+        {
+          "src": "/assets/fotos/ejemplo/encuentro-3.jpg",
+          "alt": "Grupo de personas alrededor de una mesa redonda de preguntas",
+          "caption": "La ronda de preguntas del sábado."
+        }
+      ]
+    },
+    {
+      "title": "Grupo de apoyo en el sur de Asturias",
+      "date": "2026-03-04",
+      "intro": "Encuentro mensual del grupo de la zona sur.",
+      "columns": 2,
+      "photos": [
+        {
+          "src": "/assets/fotos/ejemplo/ensayo.jpg",
+          "alt": "Personas del grupo reunidas en la sala multiusos durante el encuentro mensual",
+          "caption": "El encuentro mensual del grupo de la zona sur."
+        },
+        {
+          "src": "/assets/fotos/ejemplo/taller.jpg",
+          "alt": "Una persona explicando algo al resto del grupo durante una sesión de apoyo",
+          "caption": "Una sesión de apoyo entre iguales."
+        }
+      ]
+    }
+  ]
+}

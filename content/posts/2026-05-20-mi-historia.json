@@ -1,0 +1,87 @@
+{
+  "title": "Mi ostomía y yo: la historia de una socia",
+  "slug": "mi-historia",
+  "date": "2026-05-20",
+  "category": "Testimonios",
+  "tags": [
+    "testimonio",
+    "ostomía",
+    "comunidad"
+  ],
+  "author": "Marta P.",
+  "excerpt": "A los 29 años le dijeron que sería una ostomía permanente. Hoy tiene 41, dos hijos y un trabajo que le gusta. Esta es su historia, con su permiso y sus palabras.",
+  "cover": "sand",
+  "art": "people",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Publicamos este testimonio con su autorización y con su permiso para usar su nombre. Cuando lo leyó antes de publicarlo, solo cambió una palabra: la que quitó."
+    },
+    {
+      "type": "art",
+      "which": "people",
+      "caption": "Marta, 41 años, socia de ASEIIO desde 2021."
+    },
+    {
+      "type": "p",
+      "text": "La primera vez que me lo dijeron fue un jueves por la tarde. Yo ya sabía que la operación era seria, pero escuchar la palabra ostomía es una cosa y asumir que la vas a llevar el resto de tu vida es otra muy distinta."
+    },
+    {
+      "type": "p",
+      "text": "En casa tardé dos meses en ducharme. No por la operación, que la verdad se me dio bien. Tardé un mes en ducharme porque no quería ver lo que había cambiado."
+    },
+    {
+      "type": "p",
+      "text": "Recuerdo que el primer día que salí a la calle después del alta miraba a la gente del mercado con una mezcla de vergüenza y de miedo, como esperando que alguien me mirara raro. Nadie me miró raro. Y ahí, en ese momento, algo cambió."
+    },
+    {
+      "type": "h2",
+      "text": "Lo que nadie te cuenta"
+    },
+    {
+      "type": "list",
+      "style": "plain",
+      "items": [
+        "El ruido. Al principio te sobresalta el sonido y acabas pagando por una bolsa discreta que lo disimule. Es un detalle que la mayoría no cuenta.",
+        "La ropa. Hay prendas que ya no te vas a poder poner. Y no es un detalle menor: afecta a cómo te aceptas.",
+        "El cansancio. No es solo la operación. Es el acúmulo de pensar, planear, medir, limpiar, organizar. Ahí es donde la bolsa te quita tiempo de vida.",
+        "La constancia de tener que explicarlo. Contar la operación en una entrevista, en una revisión médica o en una presentación de trabajo."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "legal",
+      "title": "Aclaración",
+      "text": "Marta no usa la palabra ostomizado para sí misma. En su opinión, describe una característica, no a una persona. La asociación respeta esa decisión y trabaja con ella."
+    },
+    {
+      "type": "p",
+      "text": "Llamé a la asociación un día que estaba especialmente mal, después de una revisión. Una señora me cogió el teléfono y me preguntó, sin más, cómo estaba. No qué tenía, no qué me habían hecho. Cómo estaba. Y ahí pensé que yo también quería poder ser esa persona, no la que explica."
+    },
+    {
+      "type": "h2",
+      "text": "Lo que cambió después"
+    },
+    {
+      "type": "p",
+      "text": "Hice la asesoría para el certificado de discapacidad y me lo concedieron al año. Entré en un proceso de selección, pedí que me hicieran la prueba de forma presencial y explicué mi situación con total naturalidad, sin ninguna vergüenza."
+    },
+    {
+      "type": "quote",
+      "text": "No estoy enferma. Estoy viva, con una bolsa y todo lo demás. Esa diferencia me la dio esta asociación.",
+      "author": "Marta P.",
+      "role": "Socia de ASEIIO"
+    },
+    {
+      "type": "p",
+      "text": "Si estás en el punto de empezar, no te voy a decir que va a ser fácil, porque sería mentira. Te voy a decir algo mejor: que hay gente que ya ha pasado por ese punto y que te va a coger el teléfono cuando le escribas."
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "¿Te gustaría contar tu historia?",
+      "text": "Escríbenos a hola@aseiio.org. Publicamos con tu autorización, con tu nombre o con el que tú decidas, y con la opción de revisar el texto antes de que salga."
+    }
+  ],
+  "metaDescription": "A los 29 años le dijeron que sería una ostomía permanente. Hoy tiene 41, dos hijos y un trabajo que le gusta. Su historia."
+}

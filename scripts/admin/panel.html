@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de edición · ASEIIO</title>
+<style>
+  :root {
+    --ink: #0b2a45; --ink-2: #2f5170; --muted: #476586; --faint: #5c7a94;
+    --blue: #1b62b0; --blue-d: #12447f; --blue-w: #e8f0fb;
+    --teal: #12a29c; --teal-d: #0a6e69; --teal-w: #d9f2f0;
+    --red: #c0392b; --red-w: #fdecea;
+    --line: #dde5ee; --bg: #f4f7fa; --card: #fff;
+    --r: 12px; --sombra: 0 2px 10px rgba(11, 42, 69, .07);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header {
+    background: var(--ink); color: #fff; padding: 14px 20px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    position: sticky; top: 0; z-index: 10;
+  }
+  header b { font-size: 1.05rem; }
+  header .sep { opacity: .35; }
+  header a { color: #9fd4d1; }
+  header .crece { flex: 1; }
+  button, .boton {
+    font: inherit; font-weight: 600; cursor: pointer; border-radius: 100px;
+    border: 1px solid transparent; padding: 9px 18px; background: var(--blue); color: #fff;
+  }
+  button.sec { background: transparent; border-color: currentColor; color: inherit; }
+  button.fantasma { background: #fff; border-color: var(--line); color: var(--ink-2); }
+  button.peligro { background: var(--red); }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  main { max-width: 1180px; margin: 0 auto; padding: 22px 18px 80px; }
+  .tarjeta { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--sombra); padding: 20px 22px; margin-bottom: 18px; }
+  h1 { font-size: 1.5rem; margin: 0 0 6px; }
+  h2 { font-size: 1.1rem; margin: 0 0 12px; }
+  .gris { color: var(--muted); }
+  .mini { font-size: .85rem; }
+  .fila { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .entre { display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; }
+  input[type=text], input[type=password], input[type=date], input[type=search], select, textarea {
+    font: inherit; width: 100%; padding: 10px 12px; border: 1px solid var(--line);
+    border-radius: 8px; background: #fff; color: var(--ink);
+  }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
+  textarea { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .86rem; line-height: 1.5; resize: vertical; }
+  label { display: block; font-size: .82rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
+  .campo { margin-bottom: 14px; }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .tres { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 12px; }
+  @media (max-width: 780px) { .dos, .tres { grid-template-columns: 1fr; } }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  th { font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  tr.seleccionada { background: var(--blue-w); }
+  .et { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase;
+        letter-spacing: .06em; padding: 3px 8px; border-radius: 100px; background: var(--teal-w); color: var(--teal-d); }
+  .bloque { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 10px; background: #fff; }
+  .bloque > summary { padding: 11px 14px; cursor: pointer; display: flex; gap: 10px; align-items: center; list-style: none; }
+  .bloque > summary::-webkit-details-marker { display: none; }
+  .bloque[open] > summary { border-bottom: 1px solid var(--line); background: #fafcfe; }
+  .bloque .cuerpo { padding: 14px; }
+  .aviso { padding: 12px 16px; border-radius: 10px; margin-bottom: 14px; font-size: .9rem; }
+  .aviso.ok { background: var(--teal-w); color: var(--teal-d); }
+  .aviso.mal { background: var(--red-w); color: #8e2b1f; }
+  .aviso.av { background: #fff6e0; color: #7a5b00; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .8rem; }
+  #login { max-width: 400px; margin: 10vh auto; }
+  pre { background: var(--ink); color: #cfe3f5; padding: 14px 16px; border-radius: 10px; overflow-x: auto; font-size: .78rem; line-height: 1.5; }
+  .mini-foto { width: 46px; height: 46px; object-fit: cover; border-radius: 8px; background: var(--blue-w); }
+  .oculto { display: none !important; }
+  .img-fotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; }
+  .img-fotos figure { margin: 0; }
+  .img-fotos img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; display: block; }
+  .img-fotos figcaption { font-size: .68rem; color: var(--muted); word-break: break-all; margin-top: 4px; }
+  .zona { border: 2px dashed var(--line); border-radius: 12px; padding: 26px; text-align: center; color: var(--muted); }
+  .zona.puesta { border-color: var(--teal); background: var(--teal-w); }
+  a.boton { display: inline-block; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- ── Entrar ───────────────────────────────────────────────────────────── -->
+<div id="login" class="tarjeta oculto">
+  <h1>Panel de edición</h1>
+  <p class="gris mini">Contenido de la web de ASEIIO.</p>
+  <form id="form-login" style="margin-top:18px">
+    <div class="campo">
+      <label for="pass">Contraseña</label>
+      <input type="password" id="pass" autocomplete="current-password" required autofocus>
+    </div>
+    <button type="submit" style="width:100%">Entrar</button>
+  </form>
+  <div id="login-msg"></div>
+</div>
+
+<!-- ── Panel ────────────────────────────────────────────────────────────── -->
+<header id="cabecera" class="oculto">
+  <b>ASEIIO</b><span class="sep">|</span><span class="mini">Panel de edición</span>
+  <span class="crece"></span>
+  <a href="/" target="_blank" rel="noopener" class="mini">Ver la web ↗</a>
+  <button id="btn-salir" class="sec mini">Salir</button>
+</header>
+
+<main id="app" class="oculto">
+  <div id="aviso" class="aviso oculto"></div>
+
+  <!-- Artículos -->
+  <section class="tarjeta">
+    <div class="entre">
+      <h2 style="margin:0">Artículos</h2>
+      <div class="fila">
+        <input type="search" id="buscar" placeholder="Buscar por título…" style="width:220px">
+        <button id="btn-nuevo">+ Artículo nuevo</button>
+      </div>
+    </div>
+    <div style="margin-top:14px;overflow-x:auto">
+      <table>
+        <thead><tr><th>Título</th><th>Fecha</th><th>Categoría</th><th></th></tr></thead>
+        <tbody id="lista-articulos"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Editor -->
+  <section class="tarjeta oculto" id="editor">
+    <div class="entre">
+      <h2 style="margin:0" id="editor-titulo">Editando</h2>
+      <div class="fila">
+        <button id="btn-cerrar" class="fantasma">Cerrar</button>
+        <button id="btn-guardar">Guardar y publicar</button>
+      </div>
+    </div>
+
+    <div id="form-articulo" style="margin-top:18px">
+      <div class="campo">
+        <label for="f-titulo">Título</label>
+        <input type="text" id="f-titulo" placeholder="Ostomía y trabajo: tus derechos laborales">
+      </div>
+      <div class="campo">
+        <label for="f-excerpt">Resumen (lo que se ve en las tarjetas y al compartir)</label>
+        <input type="text" id="f-excerpt" placeholder="Una o dos frases, 120-160 caracteres.">
+      </div>
+      <div class="tres">
+        <div class="campo">
+          <label for="f-fecha">Fecha</label>
+          <input type="date" id="f-fecha">
+        </div>
+        <div class="campo">
+          <label for="f-categoria">Categoría</label>
+          <select id="f-categoria">
+            <option>Derechos</option><option>Salud</option>
+            <option>Actualidad</option><option>Testimonios</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="f-art">Ilustración</label>
+          <select id="f-art">
+            <option value="digestive">Intestino</option>
+            <option value="bag">Bolsa de ostomía</option>
+            <option value="people">Personas</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="f-author">Autoría</label>
+          <input type="text" id="f-author" placeholder="Equipo ASEIIO">
+        </div>
+      </div>
+      <div class="dos">
+        <div class="campo">
+          <label for="f-slug">Dirección web (vacío = se genera del título)</label>
+          <input type="text" id="f-slug" placeholder="ostomia-y-trabajo">
+        </div>
+        <div class="campo">
+          <label for="f-tags">Etiquetas (separadas por comas)</label>
+          <input type="text" id="f-tags" placeholder="trabajo, ostomía, laboral">
+        </div>
+      </div>
+    </div>
+
+    <div id="form-simple" class="oculto" style="margin-top:6px">
+      <div class="campo">
+        <label for="s-texto">Texto del artículo</label>
+        <textarea id="s-texto" rows="16" placeholder="Escribe aquí. Deja una línea en blanco para separar párrafos.
+
+Un ## seguido de texto crea un apartado.
+Un **asunto** dentro de una línea crea un apartado.
+Usa estos atajos y el resto se escribe solo."></textarea>
+        <p class="mini gris" style="margin:6px 0 0">
+          Atajos: <span class="mono">## Apartado</span> · <span class="mono">### Subapartado</span> ·
+          <span class="mono">**negrita**</span>
+        </p>
+        <div id="aviso-complejos"></div>
+      </div>
+    </div>
+
+    <details id="avanzado" class="bloque" style="margin-top:14px">
+      <summary><span class="et">avanzado</span><span class="mini gris">Editar los bloques a mano</span></summary>
+      <div class="cuerpo">
+        <div id="lista-bloques"></div>
+        <div class="fila" style="margin-top:10px">
+          <select id="nuevo-tipo" style="width:auto">
+            <option>lead</option><option>h2</option><option>p</option><option>list</option>
+            <option>callout</option><option>quote</option><option>image</option>
+            <option>gallery</option><option>art</option><option>table</option>
+            <option>steps</option><option>columns</option><option>faq</option>
+            <option>stats</option><option>divider</option><option>note</option>
+          </select>
+          <button id="btn-add" class="fantasma">Añadir bloque</button>
+          <button id="btn-json" class="fantasma">Ver / editar todo el JSON</button>
+        </div>
+        <div id="caja-json" class="oculto" style="margin-top:12px">
+          <label for="f-json">JSON completo del artículo</label>
+          <textarea id="f-json" rows="20" spellcheck="false"></textarea>
+          <div class="fila" style="margin-top:8px">
+            <button id="btn-json-ok" class="fantasma">Pasar JSON a los bloques</button>
+            <button id="btn-json-cancel" class="fantasma">Volver</button>
+          </div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- Textos de la web -->
+  <section class="tarjeta">
+    <div class="entre">
+      <h2 style="margin:0">Textos de la web</h2>
+      <div class="fila">
+        <button class="fantasma" data-abrir="site">Portada y textos</button>
+        <button class="fantasma" data-abrir="galeria">Galería</button>
+      </div>
+    </div>
+  </section>
+  <section class="tarjeta oculto" id="editor-json">
+    <div class="entre">
+      <h2 style="margin:0" id="json-titulo">Editando</h2>
+      <div class="fila">
+        <button id="btn-json-cerrar" class="fantasma">Cerrar</button>
+        <button id="btn-json-guardar">Guardar y publicar</button>
+      </div>
+    </div>
+    <p class="mini gris" style="margin:10px 0">
+      Cualquier cambio mal escrito se detecta al guardar y no llega a la web.
+      Antes de sobrescribir se guarda una copia <span class="mono">.bak</span>.
+    </p>
+    <textarea id="f-json-grande" rows="24" spellcheck="false"></textarea>
+  </section>
+
+  <!-- Fotos -->
+  <section class="tarjeta">
+    <h2>Fotos</h2>
+    <div class="zona" id="zona">
+      <input type="file" id="archivo-foto" accept="image/*" multiple class="oculto">
+      <p><b>Arrastra aquí las fotos</b> o <a href="#" id="btn-elegir">búscalas en el ordenador</a>.</p>
+      <p class="mini" style="margin:6px 0 0">Se guardan en <span class="mono">assets/fotos/</span>. Luego ejecuta <span class="mono">python3 scripts/fotos.py</span> para crear las versiones pequeñas.</p>
+    </div>
+    <div class="img-fotos" id="galeria-fotos" style="margin-top:14px"></div>
+  </section>
+
+  <!-- Publicar -->
+  <section class="tarjeta">
+    <div class="entre">
+      <div>
+        <h2 style="margin:0">Publicar</h2>
+        <p class="mini gris" style="margin:4px 0 0">Recompila la web y comprueba que no haya nada roto.</p>
+      </div>
+      <button id="btn-compilar">Compilar y comprobar</button>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+
+  let csrf = null;
+  Object.defineProperty(window, '__csrf', { get: () => csrf, configurable: true });
+  let estado = { articulos: [], fotos: [] };
+  let abierto = null;        // { tipo, archivo, datos }
+  let simple = true;         // ¿el usuario está en el modo fácil?
+
+  // ── Red ──────────────────────────────────────────────────────────────────
+  async function api(ruta, opciones = {}) {
+    const r = await fetch(ruta, {
+      method: opciones.metodo || 'GET',
+      headers: {
+        ...(opciones.cuerpo ? { 'Content-Type': 'application/json' } : {}),
+        ...(csrf ? { 'X-CSRF': csrf } : {}),
+      },
+      body: opciones.cuerpo ? JSON.stringify(opciones.cuerpo) : undefined,
+    });
+    let d = {};
+    try { d = await r.json(); } catch { d = {}; }
+    return { status: r.status, ...d };
+  }
+
+  function avisar(texto, tipo = 'ok') {
+    const a = $('#aviso');
+    if (!texto) { a.classList.add('oculto'); return; }
+    a.textContent = texto;
+    a.className = 'aviso ' + tipo;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  const escapar = (s) => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+  // ── Entrar ───────────────────────────────────────────────────────────────
+  async function comprobar() {
+    const r = await api('/admin/api/sesion');
+    if (r.dentro) {
+      csrf = r.csrf;
+      $('#login').classList.add('oculto');
+      $('#cabecera').classList.remove('oculto');
+      $('#app').classList.remove('oculto');
+      await cargarLista();
+    } else {
+      $('#login').classList.remove('oculto');
+      $('#cabecera').classList.add('oculto');
+      $('#app').classList.add('oculto');
+    }
+  }
+
+  $('#form-login').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const r = await api('/admin/api/entrada', { metodo: 'POST', cuerpo: { password: $('#pass').value } });
+    if (r.ok) { $('#pass').value = ''; await comprobar(); }
+    else { $('#login-msg').innerHTML = '<div class="aviso mal">' + escapar(r.error || 'No se ha podido entrar.') + '</div>'; }
+  });
+
+  $('#btn-salir').addEventListener('click', async () => {
+    await api('/admin/api/salir', { metodo: 'POST' });
+    location.reload();
+  });
+
+  // ── Lista ────────────────────────────────────────────────────────────────
+  async function cargarLista() {
+    const r = await api('/admin/api/archivos');
+    estado = r;
+    pintarArticulos();
+    pintarFotos();
+  }
+
+  function pintarArticulos() {
+    const f = $('#buscar').value.trim().toLowerCase();
+    const filas = estado.articulos.filter((a) => !f || a.titulo.toLowerCase().includes(f));
+    $('#lista-articulos').innerHTML = filas.length ? filas.map((a) => `
+      <tr data-archivo="${escapar(a.archivo)}" class="${abierto && abierto.archivo === a.archivo ? 'seleccionada' : ''}">
+        <td><b>${escapar(a.titulo)}</b><div class="mono gris" style="font-size:.72rem">${escapar(a.archivo)}</div></td>
+        <td class="mini">${escapar(a.fecha || '')}</td>
+        <td><span class="et">${escapar(a.categoria || '')}</span></td>
+        <td class="fila">
+          <button class="fantasma" data-abrir-art="${escapar(a.archivo)}">Editar</button>
+          <button class="fantasma" data-borrar="${escapar(a.archivo)}">Retirar</button>
+        </td>
+      </tr>`).join('') : '<tr><td colspan="4" class="gris">No hay artículos que coincidan.</td></tr>';
+
+    $$('[data-abrir-art]').forEach((b) => b.addEventListener('click', () => abrirArticulo(b.dataset.abrirArt)));
+    $$('[data-borrar]').forEach((b) => b.addEventListener('click', async () => {
+      if (!confirm('¿Retirar este artículo de la web?\n\nNo se borra: se aparta como .borrado y puedes recuperarlo.')) return;
+      const r = await api('/admin/api/borrar', { metodo: 'POST', cuerpo: { archivo: b.dataset.borrar } });
+      avisar(r.ok ? 'Artículo retirado. Ya no sale en ninguna página.' : (r.error || 'No se ha podido'), r.ok ? 'ok' : 'mal');
+      if (abierto && abierto.archivo === b.dataset.borrar) cerrarEditor();
+      await cargarLista();
+    }));
+  }
+
+  $('#buscar').addEventListener('input', pintarArticulos);
+
+  /** Rellena el formulario con los datos del artículo. Se usa al abrir y
+   *  también al pasar un JSON, para que los campos no se queden old. */
+  function rellenarCampos(d) {
+    $('#f-titulo').value = d.title || '';
+    $('#f-excerpt').value = d.excerpt || '';
+    $('#f-fecha').value = d.date || '';
+    $('#f-categoria').value = d.category || 'Salud';
+    $('#f-art').value = d.art || 'digestive';
+    $('#f-author').value = d.author || 'Equipo ASEIIO';
+    $('#f-slug').value = d.slug || '';
+    $('#f-tags').value = (d.tags || []).join(', ');
+  }
+
+  // ── Abrir un artículo ────────────────────────────────────────────────────
+  async function abrirArticulo(archivo) {
+    const r = await api('/admin/api/archivo?tipo=articulo&archivo=' + encodeURIComponent(archivo));
+    if (r.error) return avisar(r.error, 'mal');
+    let d;
+    try { d = JSON.parse(r.contenido); } catch { return avisar('El archivo no es un JSON válido.', 'mal'); }
+
+    abierto = { tipo: 'articulo', archivo, datos: d };
+    $('#editor').classList.remove('oculto');
+    $('#editor-titulo').textContent = 'Editando: ' + (d.title || archivo);
+    rellenarCampos(d);
+    simple = !d.__avanzado;
+    pintarModo();
+    pintarBloques();
+    pintarArticulos();
+    $('#editor').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function pintarModo() {
+    $('#form-articulo').classList.toggle('oculto', !simple);
+    $('#form-simple').classList.toggle('oculto', simple);
+    $('#avanzado').classList.toggle('oculto', simple);
+    if (simple) $('#s-texto').value = textoAMarcas(deBloquesATexto(abierto.datos.blocks || []));
+    const a = $('#aviso-complejos'); if (a) a.innerHTML = simple ? avisoComplejos() : '';
+  }
+
+  $('#avanzado').addEventListener('toggle', () => {
+    if ($('#avanzado').open) { simple = false; abierto.datos.__avanzado = true; pintarModo(); pintarBloques(); }
+  });
+
+  // ── Modo fácil: editar el texto sin tocar la estructura ────────────────────
+  //
+  // Antes convertía los bloques a texto y de vuelta, y eso perdía cosas: un
+  // "lead" acababa siendo un párrafo normal, los avisos perdían el tono, las
+  // ilustraciones desaparecían. Ahora sólo se edita el texto de los bloques
+  // simples y TODO lo demás se conserva tal cual.
+
+  const SIMPLES = new Set(['lead', 'p', 'h2', 'h3', 'note']);
+  const esSimple = (b) => SIMPLES.has(b.type)
+    && Object.keys(b).every((k) => k === 'type' || k === 'text');
+
+  /** Una línea por bloque complejo, legible y con su número. El número es lo
+   *  que permite reconocerlo al volver a unir, aunque quien edita lo cambie. */
+  function lineaBloque(b, i) {
+    let d = b.title || b.caption || b.text || '';
+    if (!d && Array.isArray(b.items)) {
+      d = b.items.length
+        ? String(b.items[0]).slice(0, 48) + (b.items.length > 1 ? '…' : '')
+        : '';
+    }
+    d = String(d).replace(/\s+/g, ' ').slice(0, 70);
+    const nombres = { quote: 'Cita', list: 'Lista', callout: 'Aviso', image: 'Foto',
+      gallery: 'Galería', art: 'Ilustración', table: 'Tabla', steps: 'Pasos',
+      columns: 'Columnas', faq: 'Preguntas', stats: 'Cifras', download: 'Descarga', divider: 'Separador' };
+    return `[${i + 1}] ${nombres[b.type] || b.type}${d ? ': ' + d : ''}`;
+  }
+
+  /** Vuelca el artículo a texto legible. */
+  function deBloquesATexto(bloques) {
+    const out = [];
+    (bloques || []).forEach((b, i) => {
+      if (esSimple(b)) { out.push({ simple: true, texto: b.text || '' }); return; }
+      out.push({ simple: false, bloque: b, i, texto: lineaBloque(b, i) });
+    });
+    return out;
+  }
+
+  function textoAMarcas(segmentos) {
+    return segmentos.map((s) => s.texto).join('\n\n').trim();
+  }
+
+  /** Vuelve a unir el texto con la estructura original, sin perder nada.
+   *  Los bloques complejos se localizan por su número entre corchetes. */
+  function fusionar(originales, texto) {
+    const marcas = texto.split(/\n{2,}/).map((p) => p.trim()).filter(Boolean);
+    const resultado = [];
+    let i = 0;
+    const esMarca = (m) => /^\[\d+\]\s/.test(m);
+
+    for (let k = 0; k < (originales || []).length; k += 1) {
+      const b = originales[k];
+
+      if (esSimple(b)) {
+        while (i < marcas.length && esMarca(marcas[i])) i += 1;
+        if (i < marcas.length && !esMarca(marcas[i])) {
+          resultado.push(Object.assign({}, b, { text: marcas[i] }));
+          i += 1;
+        } else {
+          resultado.push(b);
+        }
+        continue;
+      }
+
+      // Bloque complejo: si su marca sigue por aquí, se reconoce; si no, se
+      // añade igualmente. En ningún caso se descarta.
+      while (i < marcas.length && !esMarca(marcas[i]) && !esSimple(originales[k + 1] || { type: 'x' })) i += 1;
+      if (i < marcas.length && esMarca(marcas[i])) i += 1;
+      resultado.push(b);
+    }
+    return resultado;
+  }
+
+  /** Avisa de cuántos bloques se van a conservar sin tocar. */
+  function avisoComplejos() {
+    const total = (abierto.datos.blocks || []).filter((b) => !esSimple(b)).length;
+    if (!total) return '';
+    return '<p class="mini gris" style="margin:6px 0 0">'
+      + total + ' bloque' + (total === 1 ? '' : 's')
+      + ' (' + 'tablas, citas, avisos, listas, ilustraciones, fotos'
+      + ') se conservan tal cual al guardar. Edítalos en el desplegable "avanzado".</p>';
+  }
+
+  // ── Bloques en modo avanzado ─────────────────────────────────────────────
+  function pintarBloques() {
+    const bloques = abierto.datos.blocks || [];
+    $('#lista-bloques').innerHTML = bloques.length ? bloques.map((b, i) => `
+      <details class="bloque">
+        <summary>
+          <span class="et">${escapar(b.type)}</span>
+          <span class="mini gris" style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapar(resumen(b))}</span>
+          <button class="fantasma" data-sube="${i}" title="Subir">↑</button>
+          <button class="fantasma" data-baja="${i}" title="Bajar">↓</button>
+          <button class="fantasma" data-quitar="${i}" title="Quitar">✕</button>
+        </summary>
+        <div class="cuerpo">
+          <label>Contenido (JSON del bloque, sin la línea "type")</label>
+          <textarea rows="5" data-bloque="${i}">${escapar(JSON.stringify(sinTipo(b), null, 2))}</textarea>
+        </div>
+      </details>`).join('') : '<p class="gris mini">Este artículo no tiene bloques todavía.</p>';
+
+    $$('[data-bloque]').forEach((t) => t.addEventListener('change', () => {
+      try {
+        const v = JSON.parse(t.value);
+        abierto.datos.blocks[+t.dataset.bloque] = Object.assign({ type: abierto.datos.blocks[+t.dataset.bloque].type }, v);
+        t.style.borderColor = ''; pintarBloques();
+      } catch (e) { t.style.borderColor = '#c0392b'; avisar('Ese bloque no es JSON válido: ' + e.message, 'mal'); }
+    }));
+    $$('[data-quitar]').forEach((b) => b.addEventListener('click', () => {
+      abierto.datos.blocks.splice(+b.dataset.quitar, 1); pintarBloques();
+    }));
+    $$('[data-sube]').forEach((b) => b.addEventListener('click', () => mover(+b.dataset.sube, -1)));
+    $$('[data-baja]').forEach((b) => b.addEventListener('click', () => mover(+b.dataset.baja, 1)));
+  }
+
+  function mover(i, paso) {
+    const a = abierto.datos.blocks; const j = i + paso;
+    if (j < 0 || j >= a.length) return;
+    [a[i], a[j]] = [a[j], a[i]]; pintarBloques();
+  }
+
+  const sinTipo = (b) => Object.fromEntries(Object.entries(b).filter(([k]) => k !== 'type' && !k.startsWith('__')));
+
+  function resumen(b) {
+    if (b.text) return b.text;
+    if (b.title) return b.title;
+    if (b.items) return (b.items.length || 0) + ' elementos';
+    return '';
+  }
+
+  $('#btn-add').addEventListener('click', () => {
+    const t = $('#nuevo-tipo').value;
+    abierto.datos.blocks = abierto.datos.blocks || [];
+    abierto.datos.blocks.push(
+      t === 'list' ? { type: t, style: 'check', items: ['Primer punto'] }
+      : t === 'steps' ? { type: t, items: [{ title: 'Primer paso', text: 'Lo que hay que hacer.' }] }
+      : t === 'faq' ? { type: t, items: [{ q: '¿La pregunta?', a: 'La respuesta.' }] }
+      : t === 'stats' ? { type: t, items: [{ value: '20+', label: 'años acompañando' }] }
+      : t === 'columns' ? { type: t, items: [{ icon: 'heart', title: 'Un título', text: 'Una idea.' }] }
+      : t === 'image' ? { type: t, src: '/assets/fotos/foto.jpg', alt: 'Qué se ve' }
+      : t === 'gallery' ? { type: t, columns: 3, items: [{ src: '/assets/fotos/foto.jpg', alt: 'Qué se ve' }] }
+      : t === 'art' ? { type: t, which: 'people' }
+      : t === 'table' ? { type: t, head: ['A', 'B'], rows: [['1', '2']] }
+      : t === 'quote' ? { type: t, text: 'Lo que dijo alguien.', author: '', role: '' }
+      : t === 'callout' ? { type: t, tone: 'info', title: 'Aviso', text: 'El texto del aviso.' }
+      : t === 'divider' ? { type: t }
+      : { type: t, text: '' }
+    );
+    pintarBloques();
+  });
+
+  $('#btn-json').addEventListener('click', () => {
+    $('#caja-json').classList.remove('oculto');
+    $('#f-json').value = JSON.stringify(abierto.datos, null, 2);
+  });
+  $('#btn-json-cancel').addEventListener('click', () => $('#caja-json').classList.add('oculto'));
+  $('#btn-json-ok').addEventListener('click', () => {
+    try {
+      const d = JSON.parse($('#f-json').value);
+      // Comprobar aquí lo que va a fallar, y decirlo claro: si se deja pasar,
+      // el campo de fecha se queda vacío en silencio y el error de después
+      // ("falta date") no explica cuál era el problema de verdad.
+      const problemas = [];
+      if (!d.date) problemas.push('Falta "date" (AAAA-MM-DD).');
+      else if (!/^\d{4}-\d{2}-\d{2}$/.test(d.date)) problemas.push(`La fecha "${d.date}" no vale: tiene que ser AAAA-MM-DD.`);
+      for (const campo of ['title', 'excerpt', 'category']) {
+        if (!d[campo] || !String(d[campo]).trim()) problemas.push(`Falta "${campo}".`);
+      }
+      if (!Array.isArray(d.blocks) || !d.blocks.length) problemas.push('El artículo no tiene bloques.');
+      else d.blocks.forEach((b, i) => {
+        if (!b || !b.type) problemas.push(`El bloque ${i + 1} no dice qué tipo es.`);
+      });
+      if (problemas.length) {
+        avisar('El JSON tiene problemas: ' + problemas.slice(0, 4).join(' '), 'mal');
+        return;
+      }
+
+      abierto.datos = d;
+      $('#caja-json').classList.add('oculto');
+      // Sin esto, título, fecha y categoría se quedarían con los valores
+      // antiguos del formulario y el guardado los machacaría en silencio.
+      rellenarCampos(d);
+      $('#editor-titulo').textContent = 'Editando: ' + (d.title || abierto.archivo);
+      simple = false;
+      pintarBloques();
+      avisar('JSON cargado. Revísalo y pulsa "Guardar y publicar".', 'av');
+    } catch (e) { avisar('El JSON no es válido: ' + e.message, 'mal'); }
+  });
+
+  function cerrarEditor() { abierto = null; $('#editor').classList.add('oculto'); pintarArticulos(); }
+  $('#btn-cerrar').addEventListener('click', cerrarEditor);
+
+  // ── Guardar ──────────────────────────────────────────────────────────────
+  function recoger() {
+    const d = abierto.datos;
+    d.title = $('#f-titulo').value.trim();
+    d.excerpt = $('#f-excerpt').value.trim();
+    d.date = $('#f-fecha').value;
+    d.category = $('#f-categoria').value;
+    d.art = $('#f-art').value;
+    d.author = $('#f-author').value.trim() || 'Equipo ASEIIO';
+    if ($('#f-slug').value.trim()) d.slug = $('#f-slug').value.trim(); else delete d.slug;
+    d.tags = $('#f-tags').value.split(',').map((t) => t.trim()).filter(Boolean);
+    if (simple) d.blocks = fusionar(abierto.datos.blocks, $('#s-texto').value);
+    delete d.__avanzado;
+    return d;
+  }
+
+  $('#btn-guardar').addEventListener('click', async (e) => {
+    if (!abierto) return;
+    const boton = e.target;
+    boton.disabled = true; boton.textContent = 'Guardando…';
+    const r = await api('/admin/api/guardar', {
+      metodo: 'POST',
+      cuerpo: { tipo: 'articulo', archivo: abierto.archivo, contenido: JSON.stringify(recoger(), null, 2) },
+    });
+    boton.disabled = false; boton.textContent = 'Guardar y publicar';
+
+    if (r.ok) {
+      // Recargar lo que el servidor ha guardado, ya parseado: si se deja como
+      // texto, a partir de aquí el editor deja de funcionar.
+      const recargado = await api('/admin/api/archivo?tipo=articulo&archivo=' + encodeURIComponent(abierto.archivo));
+      if (recargado.contenido) abierto.datos = JSON.parse(recargado.contenido);
+      avisar('Guardado y publicado en ' + r.ms + ' ms. Comprobado: sin errores.', 'ok');
+      await cargarLista();
+      $('#editor-titulo').textContent = 'Editando: ' + abierto.datos.title;
+    } else {
+      avisar('No se ha guardado. ' + (r.error || 'Revisa lo que has escrito.'), 'mal');
+    }
+  });
+
+  // ── Artículo nuevo ───────────────────────────────────────────────────────
+  $('#btn-nuevo').addEventListener('click', async () => {
+    const titulo = prompt('Título del artículo nuevo:');
+    if (!titulo) return;
+    const r = await api('/admin/api/nuevo', { metodo: 'POST', cuerpo: { titulo } });
+    if (r.ok) { avisar('Artículo creado. Ya puedes escribirlo.', 'ok'); await cargarLista(); abrirArticulo(r.archivo); }
+    else avisar(r.error || 'No se ha podido crear.', 'mal');
+  });
+
+  // ── Textos de la web ─────────────────────────────────────────────────────
+  $$('[data-abrir]').forEach((b) => b.addEventListener('click', async () => {
+    const tipo = b.dataset.abrir;
+    const r = await api('/admin/api/archivo?tipo=' + tipo + '&archivo=' + tipo + '.json');
+    if (r.error) return avisar(r.error, 'mal');
+    abierto = { tipo, archivo: tipo + '.json', datos: JSON.parse(r.contenido) };
+    $('#editor-json').classList.remove('oculto');
+    $('#json-titulo').textContent = tipo === 'site' ? 'Portada y textos de la web' : 'Galería de fotos';
+    $('#f-json-grande').value = JSON.stringify(abierto.datos, null, 2);
+    $('#editor-json').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+
+  $('#btn-json-cerrar').addEventListener('click', () => { abierto = null; $('#editor-json').classList.add('oculto'); });
+
+  $('#btn-json-guardar').addEventListener('click', async (e) => {
+    if (!abierto) return;
+    e.target.disabled = true; e.target.textContent = 'Guardando…';
+    const r = await api('/admin/api/guardar', {
+      metodo: 'POST',
+      cuerpo: { tipo: abierto.tipo, archivo: abierto.archivo, contenido: $('#f-json-grande').value },
+    });
+    e.target.disabled = false; e.target.textContent = 'Guardar y publicar';
+    if (r.ok) { avisar('Guardado y publicado en ' + r.ms + ' ms. Comprobado: sin errores.', 'ok'); await cargarLista(); }
+    else avisar('No se ha guardado. ' + (r.error || 'Revisa el JSON.'), 'mal');
+  });
+
+  // ── Fotos ────────────────────────────────────────────────────────────────
+  function pintarFotos() {
+    $('#galeria-fotos').innerHTML = estado.fotos.length
+      ? estado.fotos.map((f) => `<figure>
+          <img src="/assets/fotos/${escapar(f.nombre).replace(/"/g, '&quot;')}" alt="" loading="lazy">
+          <figcaption title="${escapar(f.nombre)}">${escapar(f.nombre.split('/').pop())}<br>${f.kb} KB</figcaption>
+        </figure>`).join('')
+      : '<p class="gris mini">Todavía no hay fotos.</p>';
+  }
+
+  async function subir(lista) {
+    const zona = $('#zona');
+    zona.classList.add('puesta');
+    let ok = 0; const fallos = [];
+    for (const f of lista) {
+      const r = await fetch('/admin/api/foto?nombre=' + encodeURIComponent(f.name), {
+        method: 'POST', headers: { 'X-CSRF': csrf }, body: f,
+      });
+      let d = {}; try { d = await r.json(); } catch {}
+      if (r.ok) ok += 1; else fallos.push(f.name + ': ' + (d.error || 'error'));
+    }
+    zona.classList.remove('puesta');
+    avisar(fallos.length
+      ? ok + ' subidas, ' + fallos.length + ' con problema: ' + fallos.slice(0, 3).join(' · ')
+      : ok + ' foto' + (ok === 1 ? '' : 's') + ' subida' + (ok === 1 ? '' : 's') + '.', fallos.length ? 'av' : 'ok');
+    await cargarLista();
+  }
+
+  const zona = $('#zona');
+  zona.addEventListener('dragover', (e) => { e.preventDefault(); zona.classList.add('puesta'); });
+  zona.addEventListener('dragleave', () => zona.classList.remove('puesta'));
+  zona.addEventListener('drop', (e) => {
+    e.preventDefault(); zona.classList.remove('puesta');
+    if (Array.from(e.dataTransfer.files).length) subir(Array.from(e.dataTransfer.files));
+  });
+  $('#btn-elegir').addEventListener('click', (e) => { e.preventDefault(); $('#archivo-foto').click(); });
+  $('#archivo-foto').addEventListener('change', (e) => { if (e.target.files.length) subir(Array.from(e.target.files)); });
+
+  // ── Compilar ─────────────────────────────────────────────────────────────
+  $('#btn-compilar').addEventListener('click', async (e) => {
+    e.target.disabled = true; e.target.textContent = 'Compilando…';
+    const r = await api('/admin/api/compilar', { metodo: 'POST' });
+    e.target.disabled = false; e.target.textContent = 'Compilar y comprobar';
+    avisar(r.ok ? 'Todo correcto. ' + r.ms + ' ms.' : 'Ha habido problemas:\n' + (r.salida || ''), r.ok ? 'ok' : 'mal');
+  });
+
+  comprobar();
+})();
+</script>
+</body>
+</html>

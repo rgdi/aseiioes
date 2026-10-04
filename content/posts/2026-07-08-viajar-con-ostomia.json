@@ -1,0 +1,124 @@
+{
+  "title": "Viajar con ostomía: la guía que te hubiera gustado tener",
+  "slug": "viajar-con-ostomia",
+  "date": "2026-07-08",
+  "category": "Salud",
+  "tags": [
+    "viajes",
+    "ostomía",
+    "prevención"
+  ],
+  "author": "Equipo ASEIIO",
+  "excerpt": "Bolsas de repuesto, secuencias de emergencia, qué mirar en el vuelo y cómo pedir asistencia sin sentir vergüenza. Viajar con ostomía se puede.",
+  "cover": "blue",
+  "art": "people",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "La pregunta que más se repite en nuestros grupos de pares es siempre la misma: cómo dejo de tener miedo a viajar. La respuesta corta es que no hace falta tener miedo, hace falta tener un plan."
+    },
+    {
+      "type": "art",
+      "which": "people",
+      "caption": "Con un plan previo, viajar deja de ser un problema.",
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "Antes de salir: la bolsa de viaje"
+    },
+    {
+      "type": "p",
+      "text": "Prepara una bolsa pequeña con material para el trayecto y, por separado, el material extra que dejas en el fondo de la maleta. Nunca todo en un mismo sitio. Si pierdes el equipaje, la segunda bolsa es la que te salva el día."
+    },
+    {
+      "type": "list",
+      "style": "check",
+      "items": [
+        "Bolsas del tipo que usas, en cantidad suficiente para el viaje y dos días más.",
+        "Accesorios habituales: adhesivos, toallas de limpieza y toallas húmedas.",
+        "Un pequeño botiquín: Tiritas, gasas, un protector que no se ve y una crema reparadora de la piel.",
+        "Tarjeta de ostomizado y una nota médica con tu diagnóstico y tu tratamiento."
+      ],
+      "text": ""
+    },
+    {
+      "type": "callout",
+      "tone": "legal",
+      "title": "Tu derecho a pedir asistencia",
+      "text": "Puedes solicitar silla de ruedas, asistencia para ir al baño o acompañante en el aeropuerto. Solicítalo con antelación en la web de la compañía aérea y en la del aeropuerto: siempre es más fácil de resolver antes de facturar que en el mostrador."
+    },
+    {
+      "type": "h2",
+      "text": "En el aeropuerto"
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "Declara el material",
+          "text": "Las bolsas, adhesivos y accesorios médicos no tienen por qué retirarlos del equipaje si viajas con ellos dentro de la cabina y bien identificados."
+        },
+        {
+          "title": "Pide la asistencia",
+          "text": "Los servicios de atención a pasajeros de accesibilidad están para eso. Úsalos sin vergüenza."
+        },
+        {
+          "title": "Coge tiempo para el baño",
+          "text": "Vuela con margen. Una salida de emergencia en un vuelo es un problema logístico y de salud."
+        }
+      ],
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "El hotel"
+    },
+    {
+      "type": "p",
+      "text": "Pide al hotel una habitación sencilla, preferiblemente en una planta baja o cerca de un ascensor, y comprueba por dónde pasarás la noche antes de reservar: no es un detalle menor."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Situación",
+        "Qué hacer"
+      ],
+      "rows": [
+        [
+          "Fuga antes de salir",
+          "Lleva siempre el material de emergencia en un sitio accesible y un cambio de ropa en la bolsa pequeña"
+        ],
+        [
+          "Fuga en el avión",
+          "Avisa a la tripulación, no hay vergüenza y pueden ayudarte con limpieza y material"
+        ],
+        [
+          "Falta de material en destino",
+          "En muchos países la farmacia puede localizar el producto equivalente si llevas la caja o la receta"
+        ],
+        [
+          "Empeora y te ves",
+          "Acudir al consulado de España o al seguro de viaje"
+        ]
+      ],
+      "text": ""
+    },
+    {
+      "type": "quote",
+      "text": "El primer viaje después de la ostomía me lo pasé fatal. El tercero ya ni lo pensaba. La diferencia fue dejar de improvisar.",
+      "author": "Socia de ASEIIO",
+      "role": "Socia desde 2023"
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "¿Tienes dudas con un destino concreto?",
+      "text": "Escríbenos antes de reservar. Tenemos experiencia acumulada con los productos y con los profesionales sanitarios de la zona, y te orientamos sin compromiso."
+    },
+    {
+      "type": "note",
+      "text": "Contenido informativo. Las normas de asistencia, seguridad aérea y documentación vary según el país, la compañía y el producto que utilices: confirma siempre con la airline y con la empresa de asistencia antes de viajar."
+    }
+  ]
+}

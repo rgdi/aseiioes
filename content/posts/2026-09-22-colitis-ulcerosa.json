@@ -1,0 +1,144 @@
+{
+  "title": "Colitis ulcerosa: lo que nadie te explica en la consulta",
+  "slug": "colitis-ulcerosa-dia-a-dia",
+  "excerpt": "La colitis ulcerosa no es un Crohn con otro nombre. Repasamos en qué se diferencian, qué preguntar en tu revisión y qué derechos reconocer.",
+  "metaDescription": "Colitis ulcerosa: en qué se diferencia del Crohn, qué preguntar en la consulta, cómo afecta al día a día y qué derechos te corresponden.",
+  "date": "2026-09-22",
+  "author": "Equipo ASEIIO",
+  "category": "Salud",
+  "tags": [
+    "colitis ulcerosa",
+    "EII",
+    "síntomas",
+    "calidad de vida",
+    "derechos"
+  ],
+  "art": "digestive",
+  "cover": "mix",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Si te han dicho que tienes una enfermedad inflamatoria intestinal, es fácil asumir que todas se parecen. No. La colitis ulcerosa y la enfermedad de Crohn son distintas, y esa diferencia explica cosas muy concretas de tu día a día."
+    },
+    {
+      "type": "art",
+      "which": "digestive",
+      "caption": "La colitis ulcerosa se limita al colon y afecta siempre al recto. De ahí que la urgencia y la sangre sean tan habituales."
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "A quién representa ASEIIO",
+      "text": "La asociación cubre toda la enfermedad inflamatoria intestinal, no una sola: enfermedad de Crohn, colitis ulcerosa, colitis indeterminada, proctitis ulcerosa y colitis microscópica. Y también a todas las personas ostomizadas, tengan o no EII."
+    },
+    {
+      "type": "h2",
+      "text": "En qué se diferencia del Crohn"
+    },
+    {
+      "type": "p",
+      "text": "La diferencia no es un matiz de laboratorio: cambia lo que te va a pasar y qué vas a poder reclamar. Estas son las cuatro que más se notan en la vida diaria."
+    },
+    {
+      "type": "table",
+      "head": [
+        "",
+        "Colitis ulcerosa",
+        "Enfermedad de Crohn"
+      ],
+      "rows": [
+        [
+          "Dónde afecta",
+          "Sólo el colon",
+          "Cualquier tramo, del recto a la boca"
+        ],
+        [
+          "Por dónde empieza",
+          "Siempre en el recto y sube sin saltos",
+          "Puede empezar donde sea y saltarse zonas"
+        ],
+        [
+          "Síntoma típico",
+          "Diarrea con sangre y urgencia",
+          "Dolor abdominal y diarrea"
+        ],
+        [
+          "Fístulas y abscesos",
+          "No",
+          "Sí, es característico"
+        ]
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Tabla orientativa. Hay casos que no encajan del todo en ninguno de los dos patrones: se llaman colitis indeterminada o EII no clasificada, y son aproximadamente uno de cada diez casos. No significa que el diagnóstico esté mal hecho, sino que la frontera no siempre está clara."
+    },
+    {
+      "type": "h2",
+      "text": "La urgencia es el síntoma que más cambia tu día"
+    },
+    {
+      "type": "p",
+      "text": "En la colitis ulcerosa, la sensación de tener que ir y no poder es el motivo más habitual de consulta. No es un detalle: es lo que hace que muchas personas modifiquen sus horarios, su forma de trabajar o la distancia a la que se sientan en un transporte."
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "title": "Esto no lo peques tú",
+      "text": "La urgencia, el tenesmo, el dolor y el cansancio no son «cosa de nerviosos» ni algo que se pueda aguantar con voluntad. Son síntomas de la enfermedad y tienen tratamiento. Si no te los están tratando, es motivo de consulta."
+    },
+    {
+      "type": "h2",
+      "text": "Qué preguntar en tu revisión"
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "¿En qué extensión tengo la colitis?",
+          "text": "Proctitis, colitis izquierda o colitis extensa cambia el tratamiento y el seguimiento. Pídelo por escrito, no de palabra."
+        },
+        {
+          "title": "¿Cómo está mi inflamación ahora?",
+          "text": "La calprotectina fecal y la endoscopia dicen mucho más que «te encuentras mejor». Pregunta por ellas."
+        },
+        {
+          "title": "¿Estoy en remisión o sólo-bueno?",
+          "text": "Remisión no es lo mismo que estar asintomático. Merece la pena que te lo digan con esas palabras."
+        },
+        {
+          "title": "¿Debería ver a un Digestivo?",
+          "text": "No todas las personas con colitis necesitan consulta digestiva. Pregunta quién te va a hacer el seguimiento y cada cuánto."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Tus derechos también cuentan aquí"
+    },
+    {
+      "type": "p",
+      "text": "En la colitis ulcerosa, la sensación de tener que ir y no poder es el motivo más habitual de consulta. No es un detalle: es lo que hace que muchas personas modifiquen sus horarios, su forma de trabajar o la distancia a la que se sientan en un transporte."
+    },
+    {
+      "type": "list",
+      "style": "check",
+      "items": [
+        "Adaptación del puesto de trabajo por urgencia y acceso al aseo",
+        "Certificado de discapacidad por limitación real, no por diagnóstico",
+        "Tarjeta de ostomizado si tienes una ostomía, sea por colitis o por cualquier otra causa",
+        "Prestación de la medicación cuando hay cambios en el tratamiento"
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "title": "La carta al médico cambia la conversación",
+      "text": "Si notas que tus síntomas llevan meses sin que nadie los escuche, escríbenos. Te ayudamos a preparar una carta para tu consulta con lo que de verdad te está pasando, sin dramas y con datos."
+    },
+    {
+      "type": "note",
+      "text": "Contenido informativo. Si tienes sangre en heces de forma persistente o dolor intenso, consulta con tu equipo sanitario: hay cosas que no admiten espera."
+    }
+  ]
+}

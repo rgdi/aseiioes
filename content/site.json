@@ -1,0 +1,395 @@
+{
+  "name": "Asociación de Enfermedades Inflamatorias Intestinales y Ostomizados",
+  "shortName": "ASEIIO",
+  "region": "Asturias",
+  "brand": {
+    "mark": "png",
+    "source": "assets/brand/aseiio-logo.png"
+  },
+  "legal": "Entidad de interés sanitario y social",
+  "url": "https://www.aseiio.org",
+  "ogImage": "/assets/og.png",
+  "description": "Asociación de personas con enfermedad inflamatoria intestinal y ostomizadas de Asturias. Acompañamos, informamos y defendemos tus derechos.",
+  "tagline": "Asociación de personas con enfermedad inflamatoria intestinal y ostomizadas de Asturias. Acompañamos, informamos y defendemos tus derechos.",
+  "footerBlurb": "Defendemos los derechos de las personas con enfermedad inflamatoria intestinal y ostomizadas en Asturias y trabajamos cada día por su calidad de vida.",
+  "email": "info@aseiio.org",
+  "phone": "985 00 00 00",
+  "address": "Oviedo, Asturias",
+  "hours": "Lunes a viernes, de 10:00 a 14:00",
+  "social": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/",
+      "icon": "instagram"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://facebook.com/",
+      "icon": "facebook"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/",
+      "icon": "twitter"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:info@aseiio.org",
+      "icon": "mail"
+    }
+  ],
+  "legalLinks": [
+    {
+      "label": "Aviso legal",
+      "url": "/legal/"
+    },
+    {
+      "label": "Privacidad",
+      "url": "/legal/"
+    }
+  ],
+  "cta": {
+    "label": "Hazte socia/o",
+    "url": "/asociacion/#hazte"
+  },
+  "nav": [
+    {
+      "label": "Qué hacemos",
+      "url": "/servicios/"
+    },
+    {
+      "label": "Derechos",
+      "url": "/derechos/"
+    },
+    {
+      "label": "Recursos",
+      "url": "/recursos/"
+    },
+    {
+      "label": "Asociación",
+      "url": "/asociacion/"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "label": "Galería",
+      "url": "/galeria/"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Asturias · más de 20 años acompañando",
+    "title": "crohn, colitis\nu ostomía:\ntus *derechos*\nno se comen",
+    "lead": "Somos la asociación de personas con enfermedad inflamatoria intestinal y ostomizadas de Asturias: Crohn, colitis ulcerosa, colitis indeterminada y cualquier otra EII. Acompañamos, informamos y defendemos tus derechos en la consulta, en el trabajo y en la ley.",
+    "badges": [
+      "Asesoría jurídica gratuita",
+      "Acompañamiento entre pares",
+      "Formación para profesionales"
+    ],
+    "stats": [
+      {
+        "value": "20+",
+        "label": "años acompañando"
+      },
+      {
+        "value": "1.200",
+        "label": "personas socias"
+      },
+      {
+        "value": "Gratis",
+        "label": "asesoría jurídica"
+      }
+    ],
+    "ctaPrimary": {
+      "label": "Hazte socia/o",
+      "url": "/asociacion/#hazte"
+    },
+    "ctaSecondary": {
+      "label": "Consulta tus derechos",
+      "url": "/derechos/"
+    }
+  },
+  "marquee": [
+    "Enfermedad de Crohn",
+    "Colitis ulcerosa",
+    "Colitis indeterminada",
+    "Ostomía",
+    "Bolsa coletora",
+    "Calprotectina fecal",
+    "Terapia biológica",
+    "Certificado de discapacidad",
+    "Tarjeta de ostomizado",
+    "Inmunoterapia",
+    "Nutrición",
+    "Salud sexual",
+    "Empleo",
+    "Viajes",
+    " invisibles que se ven"
+  ],
+  "proof": [
+    {
+      "value": "1.200",
+      "label": "personas socias en Asturias"
+    },
+    {
+      "value": "350+",
+      "label": "consultas jurídicas al año"
+    },
+    {
+      "value": "18",
+      "label": "jornadas de formación"
+    },
+    {
+      "value": "48 h",
+      "label": "de respuesta media"
+    }
+  ],
+  "services": [
+    {
+      "n": "01",
+      "icon": "scales",
+      "title": "asesoría jurídica",
+      "text": "Revisamos tu caso y te decimos qué puedes reclamar, con quién y cómo. Te acompañamos en cada paso hasta la resolución.",
+      "items": [
+        "Revisión gratuita de tu caso",
+        "Modelos de escritos y solicitudes",
+        "Acompañamiento en la vía administrativa"
+      ]
+    },
+    {
+      "n": "02",
+      "icon": "heart",
+      "title": "acompañamiento clínico",
+      "text": "Acompañamos el día a día de la enfermedad: consultas, crisis y tratamientos, sin dejarte sola en ningún momento del proceso.",
+      "items": [
+        "Acompañamiento en consultas",
+        "Grupos de ayuda entre pares",
+        "Apoyo a familias de pacientes jóvenes"
+      ]
+    },
+    {
+      "n": "03",
+      "icon": "bag",
+      "title": "ostomía y producto",
+      "text": "Información honesta sobre bolsas y accesorios, y apoyo de calidad cuando el material no llega o no funciona.",
+      "items": [
+        "Guía de productos y accesorios",
+        "Préstamo de material de emergencia",
+        "Reclamación de producto defectuoso"
+      ]
+    },
+    {
+      "n": "04",
+      "icon": "card",
+      "title": "derechos y prestaciones",
+      "text": "Certificado de discapacidad, tarjeta de ostomizado, prestaciones y exenciones: te explicamos cómo conseguirlos.",
+      "items": [
+        "Certificado de discapacidad",
+        "Tarjeta de ostomizado",
+        "Prestaciones y exenciones"
+      ]
+    },
+    {
+      "n": "05",
+      "icon": "flask",
+      "title": "investigación y datos",
+      "text": "Recogemos datos reales de pacientes asturianos para que la investigación en EII vaya en la dirección correcta.",
+      "items": [
+        "Registro de pacientes",
+        "Colaboración con investigación",
+        "Informe anual de situación"
+      ]
+    },
+    {
+      "n": "06",
+      "icon": "people",
+      "title": "comunidad y visibilidad",
+      "text": "Formación para profesionales, campañas de visibilización y una comunidad donde nadie tiene que explicarse dos veces.",
+      "items": [
+        "Formación para enfermería y medicina",
+        "Campañas de visibilización",
+        "Red de personas voluntarias"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Nos escribes o llamas",
+      "text": "Nos cuentas tu situación con total confianza. No hace falta que tengas todas las respuestas."
+    },
+    {
+      "title": "Revisamos tu caso",
+      "text": "Lo analizamos con el equipo jurídico y te explicamos con claridad qué opciones tienes."
+    },
+    {
+      "title": "Te acompañamos",
+      "text": "Te ayudamos a preparar el escrito, la solicitud o la reclamación, y vamos contigo."
+    },
+    {
+      "title": "Seguimos contigo",
+      "text": "No desaparecemos al ganar. Seguimos vigilando tu caso y formando parte de tu comunidad."
+    }
+  ],
+  "story": {
+    "quote": "Antes creía que la bolsa era lo primero que contaría de mí. Hoy es simplemente una parte de mí, y la asociación que me enseñó a decirlo con orgullo.",
+    "author": "Nombre de la socia",
+    "role": "Socia de ASEIIO · ostomizada",
+    "text": "Historias como esta son las que nos impulsan a seguir. Cada persona que encuentra su voz nos da fuerza para reclamar una atención digna para todas.",
+    "cta": {
+      "label": "Comparte tu historia",
+      "url": "/asociacion/#contacto"
+    }
+  },
+  "faq": [
+    {
+      "q": "¿Quién puede ser socia o socio?",
+      "a": "Cualquier persona con enfermedad inflamatoria intestinal, ostomizada o cuidadora puede formar parte de la asociación como socia. También aceptamos personas de apoyo que comparten el compromiso de la asociación."
+    },
+    {
+      "q": "¿La asesoría jurídica es gratuita?",
+      "a": "Sí. La primera revisión de tu caso y el acompañamiento inicial son gratuitos para personas socias. Solo pedimos que te asocies."
+    },
+    {
+      "q": "¿Cubrís Asturias o también otras comunidades?",
+      "a": "Somos una asociación asturiana y nuestra actividad principal es en Asturias, pero ayudamos a cualquier persona que nos escriba desde otros sitios con la derivación adecuada."
+    },
+    {
+      "q": "¿Necesito tener Crohn para pedir ayuda?",
+      "a": "No. También damos soporte a personas con colitis ulcerosa, otras EII, ostomizadas por cualquier causa y a quienes cuidan de ellas."
+    },
+    {
+      "q": "¿Puedo participar en los grupos y en las jornadas?",
+      "a": "Claro. Los grupos de ayuda entre pares y las jornadas de formación están abiertos a toda la comunidad. Solo necesitas escribirnos para participar."
+    },
+    {
+      "q": "¿La web sustituye a la consulta médica?",
+      "a": "No. El contenido de esta web es orientativo y no sustituye la valoración de tu equipo sanitario ni el asesoramiento jurídico individual."
+    }
+  ],
+  "rights": [
+    {
+      "icon": "scales",
+      "title": "asesoría jurídica gratuita",
+      "text": "Revisamos tu caso y te decimos qué puedes reclamar, con quién y cómo. Acompañamiento en cada paso hasta la resolución."
+    },
+    {
+      "icon": "card",
+      "title": "certificado de discapacidad",
+      "text": "Te guiamos para solicitarlo, preparar la solicitud y saber qué grado te corresponde según cómo la enfermedad te afecta en el día a día."
+    },
+    {
+      "icon": "bag",
+      "title": "tarjeta de ostomizado",
+      "text": "Información sobre cómo solicitarla y utilizarla para acceder a las prestaciones y exenciones que te corresponden."
+    },
+    {
+      "icon": "heart",
+      "title": "derechos laborales",
+      "text": "Adaptación del puesto, tiempo de descanso para la bolsa, permisos y protección frente a despido por causa de la enfermedad."
+    },
+    {
+      "icon": "shield",
+      "title": "sanidad y tratamientos",
+      "text": "Acceso a la terapia biológica, cambio de tratamiento y financiación de medicamentos. Acompañamos tus reclamaciones cuando la respuesta no llega."
+    },
+    {
+      "icon": "chat",
+      "title": "acompañamiento en la consulta",
+      "text": "Puedes escribirnos antes de ir al médico y te ayudamos a preparar tus preguntas. Si puedes, puedes ir acompañada."
+    }
+  ],
+  "resources": [
+    {
+      "icon": "doc",
+      "title": "Guía de derechos para personas con EII",
+      "text": "Documento resumen con los pasos para reclamar, a quién escribir y con qué plazos.",
+      "meta": "PDF · 12 páginas"
+    },
+    {
+      "icon": "bag",
+      "title": "Manual de ostomía: la bolsa que te funciona",
+      "text": "Tipos de bolsa, accesorios, cambio de producto y solución de problemas habituales de piel.",
+      "meta": "PDF · 20 páginas"
+    },
+    {
+      "icon": "book",
+      "title": "Guía para el recién diagnosticado",
+      "text": "Qué preguntar en la primera consulta, cómo explicar tu enfermedad y qué solicitar desde el primer momento.",
+      "meta": "PDF · 8 páginas"
+    },
+    {
+      "icon": "people",
+      "title": "Modelo de escrito para el SSD",
+      "text": "Plantilla editable para solicitar el certificado de discapacidad y su revisión.",
+      "meta": "DOC · plantilla"
+    },
+    {
+      "icon": "flask",
+      "title": "Informe anual de la situación en Asturias",
+      "text": "Datos de acceso a tratamientos, tiempos de espera y de la brecha territorial entre las áreas sanitarias.",
+      "meta": "PDF · informe"
+    },
+    {
+      "icon": "phone",
+      "title": "Tarjeta de contactos útiles",
+      "text": "Servicios de salud, Inspección de Trabajo, Seguridad Social y otros organismos útiles.",
+      "meta": "PDF · 1 página"
+    }
+  ],
+  "team": [
+    {
+      "name": "Nombre de la presidenta",
+      "role": "Presidencia"
+    },
+    {
+      "name": "Nombre de la vicepresidenta",
+      "role": "Vicepresidencia"
+    },
+    {
+      "name": "Nombre de la secretaria",
+      "role": "Secretaría"
+    },
+    {
+      "name": "Nombre de la tesorera",
+      "role": "Tesorería"
+    }
+  ],
+  "valores": [
+    "Escucha antes que consejo",
+    "Hechos, no promesas",
+    "Acompañar también es compatible con el trabajo",
+    "Nada de nosotros sin nosotras"
+  ],
+  "alcance": {
+    "eyebrow": "A quién acompañamos",
+    "h2": "no es una enfermedad, son varias",
+    "lead": "Cuando alguien llega a la consulta dice «tengo una EII» como si fuera una sola cosa. No lo es. Y el nombre de la asociación tampoco habla de una: habla de personas.",
+    "eii": [
+      {
+        "name": "Enfermedad de Crohn",
+        "text": "Puede afectar a cualquier tramo del intestino, del recto a la boca. Dolor, diarrea, y a veces fístulas."
+      },
+      {
+        "name": "Colitis ulcerosa",
+        "text": "Se limita al colon y empieza siempre en el recto. Diarrea con sangre y urgencia son sus caras visibles."
+      },
+      {
+        "name": "Proctitis y colitis izquierda",
+        "text": "Formas de colitis ulcerosa limitadas a una parte del colon."
+      },
+      {
+        "name": "Colitis indeterminada",
+        "text": "No se puede encajar del todo en Crohn ni en colitis ulcerosa. Es lo más habitual cuando el diagnóstico cuesta de cerrar."
+      },
+      {
+        "name": "Colitis microscópica",
+        "text": "Inflamación que sólo se ve en la biopsia, con diarrea crónica."
+      }
+    ],
+    "ostomia": {
+      "title": "Y todas las personas ostomizadas",
+      "text": "No hace falta tener una EII para tener una ostomía. Puede venir de una colitis, de un tumor, de una diverticulitis o de un accidente vascular. Quien lleva una bolsa viene a lo mismo que el resto: a que no le condene la vida."
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "title": "Certificado de discapacidad: Crohn, colitis u ostomía",
+  "slug": "certificado-de-discapacidad",
+  "date": "2026-09-10",
+  "category": "Derechos",
+  "tags": [
+    "discapacidad",
+    "valoración",
+    "beneficios",
+    "EII",
+    "ostomía"
+  ],
+  "author": "Equipo ASEIIO",
+  "excerpt": "El certificado abre puertas que mucha gente no sabe que existen, con Crohn, con colitis y también con una ostomía. Te explicamos el proceso paso a paso.",
+  "cover": "blue",
+  "featured": true,
+  "art": "bag",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Mucha gente con Crohn o con colitis vive años sin pedir el certificado de discapacidad, porque no sabe para qué sirve o porque cree que hace falta estar en silla de ruedas. Ninguna de las dos cosas es cierta. Y el mismo vale para una ostomía: que no te afecte de forma permanente y—by hecho de tenerla—no te cierra la puerta."
+    },
+    {
+      "type": "p",
+      "text": "El certificado no es un sello, es un instrumento. En función del grado que te reconozcan puede abrir el acceso a bolsas de empleo con incentivos fiscales, exenciones, prestaciones, deducciones o cambios en tus condiciones laborales."
+    },
+    {
+      "type": "h2",
+      "text": "Qué se evalúa y qué no"
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "No importa el diagnóstico",
+      "text": "El baremo no pregunta si tienes Crohn, colitis ulcerosa u otra EII. Tampoco pregunta si la causa de tu ostomía fue una colitis, un tumor o cualquier otra cosa. Sólo pregunta qué te impide hacer en tu vida. Con el mismo diagnóstico hay grados muy distintos, y con diagnósticos distintos se puede llegar al mismo."
+    },
+    {
+      "type": "p",
+      "text": "La valoración no se basa en el diagnóstico, sino en lo que la enfermedad te impide hacer en tu vida cotidiana. Puedes tener un diagnóstico clasificado como leve y un grado alto de discapacidad, o al revés."
+    },
+    {
+      "type": "columns",
+      "items": [
+        {
+          "icon": "clock",
+          "title": "Qué sí se mira",
+          "text": "Las limitaciones para realizar actividades de la vida diaria, la necesidad de apoyos, el impacto en el trabajo y los efectos del tratamiento."
+        },
+        {
+          "icon": "heart",
+          "title": "Qué no decide",
+          "text": "Que tu enfermedad sea considerada grave. El baremo es clínico, y lo que pesa es la limitación real, no la etiqueta."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "title": "Antes de la solicitud",
+      "text": "Pide a tu médico un informe detallado que describa limitaciones concretas, no solo el diagnóstico. Escribir que hay dos deposiciones al día no sirve; escribir que hay urgencia que impide trayectos de más de veinte minutos, sí."
+    },
+    {
+      "type": "h2",
+      "text": "El proceso, paso a paso"
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "Solicitud",
+          "text": "Se presenta en el servicio de atención primaria de tu zona indicando que quieres una valoración de discapacidad."
+        },
+        {
+          "title": "Informe médico",
+          "text": "Tu profesional de cabecera lo redacta con los datos clínicos relevantes y las limitaciones observadas."
+        },
+        {
+          "title": "Unidad de valoración",
+          "text": "Te citan para una entrevista y, si lo consideran necesario, pruebas complementarias."
+        },
+        {
+          "title": "Resolución",
+          "text": "Recibes la notificación con el grado reconocido. Si no te convence, se puede reclamar."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Qué hacer si te dicen que no"
+    },
+    {
+      "type": "p",
+      "text": "Una resolución denegada no es el final. Se puede presentar una reclamación previa en vía administrativa y, si no prospera, acudir a los tribunales. Ahí es donde tener la documentación correcta desde el principio marca una diferencia enorme."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Clase",
+        "Porcentaje",
+        "Qué puede implicar"
+      ],
+      "rows": [
+        [
+          "Nula",
+          "0 – 4 %",
+          "No se activa el reconocimiento como persona con discapacidad"
+        ],
+        [
+          "Leve",
+          "5 – 24 %",
+          "Limitaciones compatibles con la práctica totalidad de las actividades habituales"
+        ],
+        [
+          "Moderada",
+          "25 – 49 %",
+          "Dificultad importante en algunas actividades, con independencia en el autocuidado"
+        ],
+        [
+          "Grave",
+          "50 – 95 %",
+          "Dificultad importante en la mayoría de actividades, con apoyo en alguna de ellas"
+        ],
+        [
+          "Total",
+          "96 – 100 %",
+          "Limitación completa en las actividades de la vida diaria"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "title": "Tabla orientativa",
+      "text": "Las prestaciones concretas dependen del grado, del catálogo vigente y de la comunidad autónoma. Para tu caso particular, lo revisamos contigo en la asesoría."
+    },
+    {
+      "type": "note",
+      "text": "Contenido de carácter informativo, no asesoramiento jurídico. Las clases y sus intervalos están regulados por el Real Decreto 888/2022, de 18 de octubre, y el reconocimiento como persona con discapacidad se sitúa a partir del 33 % de grado. Verifica siempre tu caso y revisa la normativa vigente con un profesional antes de tomar decisiones."
+    }
+  ],
+  "metaDescription": "Cómo pedir el certificado de discapacidad con Crohn, colitis ulcerosa u ostomía: qué se evalúa, el proceso paso a paso y los grados del baremo vigente."
+}

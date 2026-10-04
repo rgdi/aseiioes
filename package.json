@@ -1,0 +1,34 @@
+{
+  "name": "aseiio-web",
+  "version": "1.0.0",
+  "description": "Sitio web estático de ASEIIO (Asociación de Enfermedades Inflamatorias Intestinales y Ostomizados de Asturias)",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "serve": "node scripts/serve.js",
+    "qa": "node scripts/qa.js",
+    "test": "node scripts/test-ui.js && node scripts/test-a11y.js && node scripts/seo.js",
+    "test:ui": "node scripts/test-ui.js",
+    "test:a11y": "node scripts/test-a11y.js",
+    "shot": "node scripts/shot.js",
+    "shot:sections": "node scripts/shot-sections.js",
+    "og": "node scripts/og.js",
+    "seo": "node scripts/seo.js",
+    "fotos": "python3 scripts/fotos.py",
+    "admin": "node scripts/admin.js 4322",
+    "admin:nueva-clave": "node scripts/admin.js --nueva-clave",
+    "test:auth": "node .qa/test-auth.mjs",
+    "test:seguridad": "node .qa/security.mjs",
+    "test:panel": "node .qa/panel.mjs",
+    "install": "node scripts/install.js"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

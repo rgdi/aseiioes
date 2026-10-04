@@ -1,0 +1,110 @@
+{
+  "title": "Novedades terapéuticas en enfermedad inflamatoria intestinal",
+  "slug": "novedades-terapeuticas",
+  "date": "2026-06-15",
+  "category": "Actualidad",
+  "tags": [
+    "tratamientos",
+    "terapia biológica",
+    "investigación",
+    "acceso"
+  ],
+  "author": "Equipo ASEIIO",
+  "excerpt": "Un resumen ordenado de las nuevas vías terapéuticas y, sobre todo, de cómo se traducen en tu tratamiento real y en los tiempos de acceso en Asturias.",
+  "cover": "ink",
+  "art": "digestive",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Cada pocos meses aparecen nuevas noticias sobre tratamientos de la enfermedad inflamatoria intestinal. Casi todas suenan más complicadas de lo que son. Vamos a ordenarlas."
+    },
+    {
+      "type": "h2",
+      "text": "Qué ha cambiado de verdad"
+    },
+    {
+      "type": "p",
+      "text": "La vía que más ha avanzado no es una molécula nueva, sino una idea: **no tratar a todo el mundo igual**. La misma medicación puede funcionar a una persona y ser inútil para otra, y cada vez hay más herramientas para decidir antes de esperar meses a ver si funciona."
+    },
+    {
+      "type": "columns",
+      "items": [
+        {
+          "icon": "flask",
+          "title": "Medicina de precisión",
+          "text": "Estudios genéticos y biomarcadores que ayudan a elegir el tratamiento con más probabilidades de funcionar."
+        },
+        {
+          "icon": "heart",
+          "title": "Recaída cero",
+          "text": "El objetivo ya no es solo controlar la inflamación, sino mantener al paciente asintomático durante el mayor tiempo posible."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Vías terapéuticas disponibles"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Vía",
+        "En qué consiste",
+        "Para quién"
+      ],
+      "rows": [
+        [
+          "Anti-TNF",
+          "Anticuerpos que bloquean la inflamación",
+          "Opción clásica, muy consolidada"
+        ],
+        [
+          "Vedolizumab y ustekinumab",
+          "Mecanismos más selectivos",
+          "Menor riesgo de infecciones en algunos perfiles"
+        ],
+        [
+          "Azatioprina y metotrexato",
+          "Inmunosupresores clásicos",
+          "Mantenimiento en casos seleccionados"
+        ],
+        [
+          "Small molecules (JAK)",
+          "Por vía oral, de acción rápida",
+          "Alternativas cuando falla lo anterior"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "title": "Lo que la prensa no te dice",
+      "text": "Que una terapia nueva exista no significa que la puedas recibir. Entre la aprobación, la financiación pública, la disponibilidad en farmacia hospitalaria y el tiempo de espera puede pasar más de un año. En ASEIIO seguimos de cerca ese camino para que no te surprises."
+    },
+    {
+      "type": "h2",
+      "text": "Lo que sí puedes hacer tú"
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "Pregunta por tu caso concreto",
+          "text": "No te conformes con que te repitan la misma medicación durante años. Pregunta si existe una alternativa razonable para tu perfil."
+        },
+        {
+          "title": "Registra tus síntomas",
+          "text": "Un registro ordenado de síntomas, deposiciones y fármacos ayuda mucho a tu médico y mucho más a una reclamación."
+        },
+        {
+          "title": "Reclama el acceso",
+          "text": "Si tu médico lo indica y el tratamiento no llega, es un problema de acceso. La asesoría puede reclamarlo por ti."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Artículo informativo basado en información pública disponible en la fecha de publicación. La disponibilidad de cada tratamiento depende de la indicación clínica, de la financiación pública vigente y de las listas de acceso en cada área sanitaria. No sustituye el criterio de tu equipo médico, que es quien decide sobre tu tratamiento."
+    }
+  ]
+}

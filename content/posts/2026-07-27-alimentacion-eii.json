@@ -1,0 +1,105 @@
+{
+  "title": "Alimentación con Crohn o colitis: lo que de verdad ayuda",
+  "slug": "alimentacion-eii",
+  "date": "2026-07-27",
+  "category": "Salud",
+  "tags": [
+    "nutrición",
+    "síntomas",
+    "calidad de vida",
+    "EII",
+    "crohn",
+    "colitis"
+  ],
+  "author": "Equipo ASEIIO",
+  "excerpt": "No hay dieta mágica para la enfermedad inflamatoria intestinal, pero sí patrones que reducen los síntomas. Funcionan para Crohn y para colitis.",
+  "cover": "teal",
+  "art": "digestive",
+  "blocks": [
+    {
+      "type": "lead",
+      "text": "Si alguien te ha prometido que con un alimento concreto se te va a quitar la enfermedad, ten cuidado. La alimentación no cura la enfermedad inflamatoria, pero sí puede cambiar de forma notable cómo lo vives. Y da igual que tengas Crohn o colitis ulcerosa: las pautas de base son las mismas."
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "Va para Crohn y para colitis",
+      "text": "Este artículo habla de enfermedad inflamatoria intestinal en general, no sólo de Crohn. La diferencia más práctica: la colitis ulcerosa inflama el colon de forma continua, así que durante una crisis las opciones suelen ser aún más escasas. Lo que funciona es el mismo esquema: poco y fácil de digerir en la crisis, y reintroducción gradual en la remisión."
+    },
+    {
+      "type": "callout",
+      "tone": "warn",
+      "title": "Aviso importante",
+      "text": "Cada persona tolera alimentos distintos, y en la colitis ulcerosa suele haber más restricciones que en el Crohn, porque la inflamación afecta al colon entero. Cualquier lista que se presente como universal te va a hacer perder tiempo. Lo que sigue son patrones que nos llegan de forma repetida en la consulta, no una dieta cerrada."
+    },
+    {
+      "type": "h2",
+      "text": "El patrón que más se repite"
+    },
+    {
+      "type": "p",
+      "text": "Cuando la enfermedad está activa, el intestino tolera muy poco y suele funcionar la poca comida y bien cocida: caldos, arroz, patata y pescado a la plancha. En la remisión la cosa cambia, y conviene reintroducir alimentos poco a poco."
+    },
+    {
+      "type": "columns",
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Durante la crisis",
+          "text": "Prioriza lo fácil de digerir y de preparar. Cocciones largas, poca grasa y raciones pequeñas y frecuentes."
+        },
+        {
+          "icon": "spark",
+          "title": "En la remisión",
+          "text": "Reintroduce grupos de alimentos uno a uno y anota qué te sienta bien. Así comerás con libertad dentro de un mapa real."
+        }
+      ],
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "Alimentos que suelen dar problemas"
+    },
+    {
+      "type": "list",
+      "style": "plain",
+      "items": [
+        "Grasas y fritos: ralentizan el vaciado del intestino y aumentan los episodios.",
+        "Lácteos: la intolerancia a la lactosa es muy frecuente en enfermedad activa.",
+        "Alimentos ultraprocesados: no están prohibidos, pero conviene limitarlos.",
+        "Fibra insoluble en exceso: en fase activa puede empeorar los síntomas."
+      ],
+      "text": ""
+    },
+    {
+      "type": "h2",
+      "text": "Hidratarte no es opcional"
+    },
+    {
+      "type": "p",
+      "text": "La deshidratación es una de las complicaciones más frecuentes de la enfermedad y de las que más hospitalizaciones evitables provoca. Si tienes una ostomía, el color y el volumen de la salida te avisan mucho antes que la sed."
+    },
+    {
+      "type": "list",
+      "style": "check",
+      "items": [
+        "Bebe de forma repartida durante el día, no de golpe: absorber poco a poco funciona mejor que un vaso grande de golpe.",
+        "Si sales o haces ejercicio, lleva siempre una botella y un sobre de suero oral en el bolso.",
+        "Si tienes una ostomía de output alto, aumenta el líquido a medida que aumenta la salida.",
+        "Cuenta también con el líquido de la comida: sopas, purés, fruta y verduras cuentan."
+      ],
+      "text": ""
+    },
+    {
+      "type": "callout",
+      "tone": "tip",
+      "title": "Pide un nutricionista especializado",
+      "text": "Solicita una derivación a nutrición y especifica que necesitas a un profesional con experiencia en enfermedades inflamatorias intestinales. La diferencia entre una lista genérica y un plan real es enorme."
+    },
+    {
+      "type": "note",
+      "text": "Contenido informativo. Las necesidades de líquido varían mucho de una persona a otra: si presentas pérdida de peso importante, deshidratación o dolor intenso, consulta con tu equipo sanitario antes de cambiar tu alimentación."
+    }
+  ],
+  "metaDescription": "Alimentación en la enfermedad inflamatoria intestinal: patrones que ayudan con Crohn y con colitis ulcerosa, y en qué se diferencian."
+}
