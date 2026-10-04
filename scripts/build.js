@@ -164,8 +164,20 @@ const base = String(site.url || '').replace(/\/+$/, '');
 const url = (p = '/') => `${base}${p}`;
 
 /* Fecha del último cambio del contenido. Sin ella los buscadores asumen que
-   las páginas fijas no cambian nunca y las indexan menos a menudo. */
-const contenidoFecha = fs.statSync(path.join(ROOT, 'content', 'site.json')).mtime.toISOString().slice(0, 10);
+   las páginas fijas no cambian nunca y las indexan menos a menudo.
+
+   Se lee de site.json → "updated". Antes se usaba la fecha de modificación del
+   fichero, pero eso cambiaba en cada clonado o copia: el sitemap decía que
+   todo se había modificado hoy aunque nadie hubiera tocado nada, y el build
+   dejaba de ser reproducible. Si no está el campo, se usa la fecha del
+   artículo más reciente, y si tampoco, la fecha del propio build. */
+const contenidoFecha = (() => {
+  const declarada = String(site.updated || '').trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(declarada)) return declarada;
+  const recientes = posts.map((p) => p.updatedDate || p.dateISO).sort();
+  if (recientes.length) return recientes[recientes.length - 1];
+  return new Date().toISOString().slice(0, 10);
+})();
 const STATIC_PAGES = [
   ['/', 'weekly', '1.0'],
   ['/servicios/', 'monthly', '0.8'],
